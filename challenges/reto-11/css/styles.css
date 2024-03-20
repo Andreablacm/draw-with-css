@@ -12,23 +12,34 @@ Colors:
 
 .head {
   overflow: hidden;
-  position:relative;
+  position: relative;
   height: 200px;
   width: 200px;
-  background-color:#fe5f55 ;
+  background-color: #fe5f55;
   margin-inline: auto;
   top: 50px;
   border-radius: 50% 50% 24% 24%;
 }
 
 .head::after {
-  position:absolute;
+  position: absolute;
   content: '';
   width: 90px;
   height: 90px;
   background-color: #fff1c1;
   border-radius: 50%;
-  top: -39px;
-  left: 7px
+  top: -42px;
+  left: 10px;
+  box-shadow: 90px 0 #fff1c1, -5px 117px 0 -15px #fff1c1, 95px 117px 0 -15px #fff1c1;
+}
 
+.head::before {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 10px;
+  background-color: #fff1c1;
+  top: 170px;
+  left: 80px;
+  border-radius: 20px;
 }
