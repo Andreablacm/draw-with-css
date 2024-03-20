@@ -10,4 +10,18 @@ Colors:
 }
 
 .square {
+  position:relative;
+  height: 147px;
+  width: 147px;
+  background-color:#6592CF;
+  margin-inline: auto;
+  top: 76px;
+  rotate: 15deg;
+}
+.square::after {
+  position:absolute;
+  content: '';
+  height: 300px;
+  width: 300px;
+  background-color: #243D83;
 }
